@@ -1,3 +1,5 @@
+#![allow(unexpected_cfgs)]
+
 
 use borsh::{BorshDeserialize, BorshSerialize};
 use solana_program:: {
@@ -23,7 +25,7 @@ struct Counter {
 entrypoint!(counter_contract);
 
 pub fn counter_contract(
-    program_id: &Pubkey,
+    _program_id: &Pubkey,
     accounts: &[AccountInfo],
     instruction_data: &[u8]
 ) -> ProgramResult {
