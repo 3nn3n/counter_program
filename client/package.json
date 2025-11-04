@@ -10,6 +10,8 @@
     "typescript": "^5"
   },
   "dependencies": {
-    "@solana/kit": "^5.0.0"
+    "@solana-program/system": "^0.9.0",
+    "@solana/kit": "^5.0.0",
+    "@solana/signers": "^5.0.0"
   }
 }
